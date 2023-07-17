@@ -1,22 +1,14 @@
 #!/usr/bin/env python3
 """
-8-all module
-
-Defines the list_all function.
+List all documents in Python
 """
-from pymongo.collection import Collection
 
 
 def list_all(mongo_collection):
     """
-    Lists all documents in a collection.
+    lists all documents in a collection
 
-    Args:
-        mongo_collection (pymongo.collection.Collection):
-            The pymongo collection object.
-
-    Returns:
-        list: A list of dictionaries, each
-        representing a document in the collection.
+    :param mongo_collection:
+    :return:
     """
-    return (mongo_collection.find())
+    return mongo_collection.find()
