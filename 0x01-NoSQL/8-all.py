@@ -7,7 +7,7 @@ Defines the list_all function.
 from pymongo.collection import Collection
 
 
-def list_all(mongo_collection: Collection):
+def list_all(mongo_collection):
     """
     Lists all documents in a collection.
 
