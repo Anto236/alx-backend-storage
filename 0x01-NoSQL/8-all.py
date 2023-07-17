@@ -5,10 +5,9 @@
 Defines the list_all function.
 """
 from pymongo.collection import Collection
-from typing import List
 
 
-def list_all(mongo_collection: Collection) -> List[dict]:
+def list_all(mongo_collection: Collection):
     """
     Lists all documents in a collection.
 
@@ -20,4 +19,4 @@ def list_all(mongo_collection: Collection) -> List[dict]:
         list: A list of dictionaries, each
         representing a document in the collection.
     """
-    return list(mongo_collection.find())
+    return (mongo_collection.find())
