@@ -2,7 +2,6 @@
 """
 Implements an expiring web cache and tracker
 """
-
 from typing import Callable
 from functools import wraps
 import redis
@@ -32,4 +31,4 @@ def get_page(url: str) -> str:
 
 
 if __name__ == "__main__":
-    get_page('http://slowwly.roberomurray.co.uk')
+    get_page('http://slowwly.robertomurray.co.uk')
